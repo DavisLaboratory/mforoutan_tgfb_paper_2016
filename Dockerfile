@@ -1,4 +1,4 @@
-FROM csbl/sbl-docker-rstudio-server
+FROM davislaboratory/rstudio-server
 MAINTAINER soroorh <hediyehzadeh.s@wehi.edu.au>
 RUN git clone https://soroorh@bitbucket.org/soroorh/mforoutan_tgfb_paper_2016.git
 RUN ln -s /home/mforoutan_tgfb_paper_2016/scripts /home/sbl/scripts
