@@ -7,7 +7,7 @@ RUN chown -R davislab:davislab /home/davislab/
 #RUN chown davislab: /home/davislab
 #RUN chmod u+w /home/davislab
 WORKDIR /mforoutan_tgfb_paper_2016
-RUN ln -s scripts/ /home/davislab/scripts
+RUN ln -s /home/mforoutan_tgfb_paper_2016/scripts/ /home/davislab/scripts
 #RUN cp -R scripts/ /home/davislab/scripts/
 #RUN cp -R data/ /home/davislab/data/
 #RUN cp -R output/ /home/davislab/output/
