@@ -9,7 +9,7 @@ RUN mkdir -p /scripts
 RUN chown -R davislab:davislab /home/davislab/
 #RUN chown davislab: /home/davislab
 #RUN chmod u+w /home/davislab
-RUN mv /home/mforoutan_tgfb_paper_2016/scripts /srcipts
+RUN mv mforoutan_tgfb_paper_2016/scripts /srcipts
 RUN ln -s /scripts /home/davislab/scripts
 #RUN cp -R scripts/ /home/davislab/scripts/
 #RUN cp -R data/ /home/davislab/data/
