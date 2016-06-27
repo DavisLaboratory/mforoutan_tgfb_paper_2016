@@ -11,7 +11,7 @@ RUN find /home/davislab -type d -exec chmod 755 {} \;
 RUN find /home/davislab -type f -exec chmod 644 {} \;
 #RUN chown davislab: /home/davislab
 #RUN chmod u+w /home/davislab
-RUN mv /mforoutan_tgfb_paper_2016/scripts/*  /srcipts
+RUN mv /mforoutan_tgfb_paper_2016/scripts/*  /scripts
 RUN ln -s /scripts /home/davislab/scripts
 #RUN cp -R scripts/ /home/davislab/scripts/
 #RUN cp -R data/ /home/davislab/data/
