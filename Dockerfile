@@ -10,6 +10,10 @@ RUN ln -s /mforoutan_tgfb_paper_2016/scripts /home/davislab/scripts
 RUN ln -s /mforoutan_tgfb_paper_2016/data /home/davislab/data
 RUN chown -R davislab:davislab /home/davislab/data/comparative_analysis/probe_gene_mapping/out_10data_check
 RUN chmod 700 /home/davislab/data/comparative_analysis/probe_gene_mapping/out_10data_check
+RUN git clone https://soroorh@bitbucket.org/soroorh/mforoutan_paper_rdata.git 
+RUN mv /mforoutan_paper_rdata/randRanks_up.RData /home/davislab/data/comparative_analysis/probe_gene_mapping/out_10data_check
+RUN git clone https://soroorh@bitbucket.org/soroorh/mforoutan_paper_rdata_2.git
+RUN mv /mforoutan_paper_rdata_2/randRanks_down.RData /home/davislab/data/comparative_analysis/probe_gene_mapping/out_10data_check
 RUN chown -R davislab:davislab /home/davislab/data/integrative_analysis/out_10data_check
 RUN chmod 700 /home/davislab/data/integrative_analysis/out_10data_check
 RUN (Rscript -e 'install.packages(c("dplyr","hexbin","colorRamps","survival","XML"), repos="http://cran.rstudio.com/")')
