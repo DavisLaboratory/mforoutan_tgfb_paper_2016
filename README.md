@@ -2,7 +2,7 @@
 
 This repository contains the Docker file that reproduces the figures and results for the following paper:
 
-**Using a Gene Expression Signature to Identify Cancer Cell Lines and Samples with TGFβ-induced EMT**  
+**A Gene Expression Signature to Identify Cancer Cell Lines and Samples with TGFβ-induced EMT**  
 Momeneh Foroutan, Joseph Cursons, Soroor Hediyeh-Zadeh, Erik W. Thompson and Melissa J. Davis
 
 ### Download Instructions
@@ -24,16 +24,7 @@ source("generate_all_experiments.R")
 
 ```
 
-##Running on a Mac
-If you are running on a Mac, you should have already installed, initialized, and started boot2docker 
-using the instructions [here](https://docs.docker.com/engine/installation/mac/). Instructions are
-the same as above, except instead of using "0.0.0.0" as the IP address, run:
-
-
-```
-boot2docker ip
-```
-
-to get the IP. Then navigate in the browser to $IP:49000.
+### Running on a Mac
+If you are running on a Mac, you should have already installed either [Docker for Mac](https://docs.docker.com/docker-for-mac/), or [Docker Toolbox](https://www.docker.com/products/docker-toolbox). Instructions are the same as above if you're using Docker for Mac. However, if you're using Docker Toolbox you would need to replace "0.0.0.0" with your IP address. You're IP address is displayed once you run the Docker Quick Terminal from Docker Toolbox.Then navigate in the browser to $IP:49000.
 
 
