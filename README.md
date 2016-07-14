@@ -27,4 +27,10 @@ source("generate_all_experiments.R")
 ### Running on a Mac
 If you are running on a Mac, you should have already installed either [Docker for Mac](https://docs.docker.com/docker-for-mac/), or [Docker Toolbox](https://www.docker.com/products/docker-toolbox). Instructions are the same as above if you're using Docker for Mac. However, if you're using Docker Toolbox you would need to replace "0.0.0.0" with your IP address. You're IP address is displayed once you run the Docker Quick Terminal from Docker Toolbox.Then navigate in the browser to $IP:49000.
 
+**Please note that some of the scripts provided with the image perform computationally expensive operations. Our testings suggest that Mac users running Docker Toolbox will have difficulties running some of the scripts, due to CPU limitations of Virtualbox-based Docker machines. Users are, therefore, strongly encouraged to install and run Docker for Mac.**
+
+Please contact Soroor (hediyehzadeh.s@wehi.edu.au) for bug reports or help requests, or simply open an issue.
+
+
+
 
