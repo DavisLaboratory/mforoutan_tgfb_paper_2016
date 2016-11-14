@@ -4,7 +4,7 @@
 
 This repository contains the Docker file that reproduces the figures and results for the following paper:
 
-**A Gene Expression Signature to Identify Cancer Cell Lines and Samples with TGFβ-induced EMT**  
+**A transcriptional Signature for TGFβ-induced Epithelial to Mesenchymal Transition in Cancer**  
 Momeneh Foroutan, Joseph Cursons, Soroor Hediyeh-Zadeh, Erik W. Thompson and Melissa J. Davis
 
 ### Download Instructions
