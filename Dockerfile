@@ -1,3 +1,7 @@
+# Please note that this Dockerfile corresponds to the davislaboratory/mforoutan_tgfb_paper_2016
+# image, which is the initial version of the study. There are two images for the new version of the study.
+# Please see https://github.com/DavisLaboratory/mforoutan_tgfb_paper_2016 for more information.
+
 FROM davislaboratory/docker-rstudio-server
 MAINTAINER soroorh <hediyehzadeh.s@wehi.edu.au>
 RUN git clone https://soroorh@bitbucket.org/soroorh/mforoutan_tgfb_paper_2016.git 
