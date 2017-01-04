@@ -1,8 +1,7 @@
-[![](https://images.microbadger.com/badges/image/davislaboratory/mforoutan_tgfb_paper_2016.svg)](https://microbadger.com/images/davislaboratory/mforoutan_tgfb_paper_2016 "Get your own image badge on microbadger.com")
 
 # Docker image for  Foroutan et al. paper
 
-This repository contains the Docker file that reproduces the figures and results for the following paper:
+This repository contains instructions to run Docker images that reproduce the figures and results for the following paper:
 
 
 **A Transcriptional Signature for TGFβ-induced EMT in Cancer**  
@@ -10,15 +9,20 @@ This repository contains the Docker file that reproduces the figures and results
 Momeneh Foroutan, Joseph Cursons, Soroor Hediyeh-Zadeh, Erik W. Thompson and Melissa J. Davis
 
 
-## Please be advised that a recent version of the image for this study is under development and will be available in early January 2017. 
+
+## Download Instructions
+
+Two separate images have been prepared that reproduce the **cell-line analysis** and the **tumour analysis**.
 
 
-### Download Instructions
+Download and install [Docker](https://docs.docker.com). 
 
-Download and install [Docker](https://docs.docker.com). Start Docker and run the following command:
+### To reproduce the results for the cell-line analysis
+
+Start Docker and run the following command:
 
 ```
-docker run -p 49000:8787 -d davislaboratory/mforoutan_tgfb_paper_2016
+docker run -p 49000:8787 -d davislaboratory/mforoutan_tgfb_2017_celllines
 
 ```
 
@@ -32,7 +36,24 @@ source("generate_all_experiments.R")
 
 ```
 
-### Running on a Mac
+### To reproduce the results for the tumours analysis
+
+Run the following command:
+
+```
+docker run -p 49000:8787 -d davislaboratory/mforoutan_tgfb_2017_tumours
+
+```
+
+then follow the above instructions. Please make sure you have stopped the running image/containers 
+, before running the other image. Running containers/image can be stopped using the following command
+
+```
+docker stop $(docker ps -aq)
+```
+
+
+#### Running on a Mac
 If you are running on a Mac, you should have already installed either [Docker for Mac](https://docs.docker.com/docker-for-mac/), or [Docker Toolbox](https://www.docker.com/products/docker-toolbox). Instructions are the same as above if you're using Docker for Mac. However, if you're using Docker Toolbox you would need to replace "0.0.0.0" with your IP address. You're IP address is displayed once you run the Docker Quick Terminal from Docker Toolbox.Then navigate in the browser to $IP:49000.
 
 **Please note that some of the scripts provided with the image perform computationally intensive operations. Our testings suggest that Mac users running Docker Toolbox will have difficulties running some of the scripts due to CPU limitations of Virtualbox-based Docker machines. Users are, therefore, strongly encouraged to install and run Docker for Mac.**
