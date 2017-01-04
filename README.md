@@ -12,6 +12,9 @@ Momeneh Foroutan, Joseph Cursons, Soroor Hediyeh-Zadeh, Erik W. Thompson and Mel
 
 ## Download Instructions
 
+> Please note that the images are temporary unavailable due to technical issues. Should further assitance be required, please contact.
+
+
 Two separate images have been prepared that reproduce the **cell-line analysis** and the **tumour analysis**.
 
 
