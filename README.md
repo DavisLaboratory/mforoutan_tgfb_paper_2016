@@ -48,13 +48,15 @@ docker run -p 49000:8787 -d davislaboratory/mforoutan_tgfb_2017_tumours
 
 ```
 
-then follow the above instructions. Please make sure you have stopped the running image/containers 
-, before running the other image. Running containers/image can be stopped using the following command
+then follow the above instructions. Please make sure you have stopped the running image/containers before
+running the other image, when running an image through the same port. Alternatively, the images can be run through different ports.
+Running containers/image can be stopped using the following command:
 
 ```
 docker stop $(docker ps -aq)
 ```
 
+**Note:** If the error 'port is allocated' is encountered, please try to stop the running image using above instructions.
 
 #### Running on a Mac
 If you are running on a Mac, you should have already installed either [Docker for Mac](https://docs.docker.com/docker-for-mac/), or [Docker Toolbox](https://www.docker.com/products/docker-toolbox). Instructions are the same as above if you're using Docker for Mac. However, if you're using Docker Toolbox you would need to replace "0.0.0.0" with your IP address. You're IP address is displayed once you run the Docker Quick Terminal from Docker Toolbox.Then navigate in the browser to $IP:49000.
