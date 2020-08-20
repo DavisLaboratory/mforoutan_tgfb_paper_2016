@@ -28,7 +28,7 @@ docker run -p 49000:8787 -d davislaboratory/mforoutan_tgfb_2017_celllines
 ```
 
 (You can replace 49000 with another open port if you want.) Navigate in your web browser to 
-http://0.0.0.0:49000. This will open up rstudio. The username and password are both [blank]. 
+http://0.0.0.0:49000. This will open up rstudio. The username and password are both `davislab`. 
 You can run *generate_all_experiments.R* to reproduce all the figures and results from Foroutan et al.
 
 ```r
